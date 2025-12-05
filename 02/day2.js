@@ -3,7 +3,6 @@
 function isValid1(id) {
     const strID = `${id}`;
     const idLen = strID.length;
-    let isValid = true;
     const subLen = idLen / 2;
     const subCount = idLen/subLen;
     if (Math.floor(subCount) === subCount) {
@@ -23,8 +22,6 @@ function isValid1(id) {
 function isValid2(id) {
     const strID = `${id}`;
     const idLen = strID.length;
-    let isValid = true;
-    const subLen = idLen / 2;
     for (let subLen = 1; subLen <= idLen / 2; subLen++) {
         const subCount = idLen/subLen;
         if (Math.floor(subCount) === subCount) {
